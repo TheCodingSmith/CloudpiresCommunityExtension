@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="popup.css">
+  <script type="text/javascript" src="popup.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+  <title>Leaderboard and Submission</title>
+</head>
+
+<body>
+  <a href="/options.html">Options</a>
+  <a href="/submittedLinks.html">Your submitted links</a>
+
+  <div class="" id="loading">
+    <h1>Loading...</h1>
+  </div>
+
+  <div class="hidden" id="loaded">
+
+    <div id="pleaseLogin" class="">
+      <span>It looks like you are not logged in, or your instance is not set up correctly. Go to the <a href="/options.html">options</a> page check your login.</span>
+    </div>
+
+    <div id="leaderBoardContainer" class="">
+
+      <div class="monthSelector" id="monthSelector">
+        <span>Select a Month</span>
+        <input type="month" name="selectMonth" id="selectMonth">
+      </div>
+      <button type="button" name="changeButton" id="changeButton">Go</button>
+
+      <h4>Leader Board!</h4>
+      <ul id="leaderBoard"></ul>
+
+      <div class="submit">
+        <h4>Submit your link</h4>
+        <form class="submitForm" name="form_submit">
+
+            <span>Question Tite: </span><input type="text" name="questionTitle" id="questionTitle" value="">
+
+            <span>Community Link: </span><input type="text" name="communityLink" id="communityLink" value="">
+
+            <span>Accepted Date: </span><input type="date" name="dateAccepted" id="dateAccepted">
+
+            <span class="acceptedSpan">Accepted Answer? </span><input type="checkbox" name="acceptedAnswer" id="acceptedAnswer" value="">
+
+            <input type="submit" value="SUBMIT" id="postSubmit">
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>Brought to you by CloudPires</footer>
+
+</html>

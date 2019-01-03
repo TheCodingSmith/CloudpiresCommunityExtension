@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Options</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway" rel="stylesheet">
+  <script type="text/javascript" src="options.js"></script>
+</head>
+
+<body>
+  <h4>Please log in!</h4>
+  <form class="" method="post" id="login">
+    <div>
+      <span>Instance: https://</span><input type="text" name="instance" value="" id="instance"><span>.com</span>
+    </div>
+    <div>
+      <span>Username: </span><input type="text" name="username" value="" id="username">
+    </div>
+    <div>
+      <span>Password: </span><input type="password" name="password" id="password">
+    </div>
+  </form>
+
+  <br />
+  <button id="saveOptions">Save</button>
+  <br />
+  <button id="eraseOptions">Restore default</button>
+
+  <div class="">
+    <div>
+      <span>Make Sure you have the table <code>u_community_posts</code></span>
+    </div>
+    <div>
+      <span>With the field <code>u_accepted_solution</code> with type as <code>True/False</code></span>
+    </div>
+    <div>
+      <span>With the field <code>u_date_accepted</code> with type as <code>Date/Time</code></span>
+    </div>
+    <div>
+      <span>With the field <code>u_question_title</code> with type as <code>String</code></span>
+    </div>
+    <div>
+      <span>With the field <code>u_link_to_answer</code> with type as <code>String</code></span>
+    </div>
+    <div>
+      <span>With the field <code>u_user</code> with type as <code>Reference</code> to the <code>User</code></span>
+    </div>
+  </div>
+
+  <h3>
+    <a href="/popup.html">Home Page</a>
+  </h3>
+
+
+</body>
+
+</html>

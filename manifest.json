@@ -1,0 +1,33 @@
+{
+  "name": "CloudPires Community top Answers",
+  "version": "1.0",
+  "description": "Extension for CloudPires to keep track of our monthly top users.",
+  "permissions": ["activeTab", "declarativeContent","storage","<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["form_submits.js"],
+    "run_at": "document_start"
+  }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "permissions": ["<all_urls>"],
+    "default_icon": {
+        "16": "images/Cloud16.png",
+        "32": "images/Cloud32.png",
+        "48": "images/Cloud48.png",
+        "128": "images/Cloud128.png"
+      }
+  },
+  "icons": {
+    "16": "images/Cloud16.png",
+    "32": "images/Cloud32.png",
+    "48": "images/Cloud48.png",
+    "128": "images/Cloud128.png"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
